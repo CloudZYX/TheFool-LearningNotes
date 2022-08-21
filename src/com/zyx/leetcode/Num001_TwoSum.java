@@ -14,6 +14,9 @@ import java.util.Map;
  * 输出：[0,1]
  */
 public class Num001_TwoSum{
+    /*
+     * 双循环
+     */
     public static int[] twoSum1(int[] nums, int target) {
         for (int i = 0; i < nums.length - 1; i++) {
             for (int j = i + 1; j < nums.length; j++) {
@@ -25,6 +28,9 @@ public class Num001_TwoSum{
         return new int[]{};
     }
 
+    /*
+     * 使用哈希表记录
+     */
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {

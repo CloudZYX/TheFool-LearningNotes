@@ -11,6 +11,12 @@ package com.zyx.leetcode;
  * 输出：[7,0,8]
  */
 public class Num002_AddTwoNum{
+    /**
+     * 模拟竖式相加，使用哨兵简化边界条件
+     * @param l1
+     * @param l2
+     * @return
+     */
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode first = new ListNode(0);
         ListNode tem = first; 
@@ -26,8 +32,8 @@ public class Num002_AddTwoNum{
                 res = res % 10;
             }
             tem.next = new ListNode(res);
+            
             tem = tem.next;
-
             l1 = l1 != null ? l1.next : null;
             l2 = l2 != null ? l2.next : null;
         }
