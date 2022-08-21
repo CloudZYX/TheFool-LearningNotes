@@ -4,7 +4,7 @@
 tag:模拟、哈希表、链表、字符串
 
 ### 模拟
-1.src\com\zyx\leetcode\Num001_TwoSum.java
+1.[alt](https://github.com/CloudZYX/TheFool-LearningNotes/blob/main/src/com/zyx/leetcode/Num001_TwoSum.java "Num001_TwoSum")
 2.src\com\zyx\leetcode\Num002_AddTwoNum.java
 3.src\com\zyx\leetcode\Num003_LongestPalindrome.java
 
