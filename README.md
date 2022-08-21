@@ -1,7 +1,7 @@
 # 唯天下之至拙能胜天下之至巧
 
 ## 算法
-tag:[模拟](### 模拟)、[哈希表](### 哈希表)、[链表](### 链表)、[字符串](### 字符串)
+tag:[模拟](# 模拟)、[哈希表](# 哈希表)、[链表](### 链表)、[字符串](### 字符串)
 
 ### 模拟
 1.[两数之和-Num001_TwoSum](https://github.com/CloudZYX/TheFool-LearningNotes/blob/main/src/com/zyx/leetcode/Num001_TwoSum.java)<br>
