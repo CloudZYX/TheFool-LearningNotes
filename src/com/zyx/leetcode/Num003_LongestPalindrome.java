@@ -10,6 +10,13 @@ package com.zyx.leetcode;
  * 输出："bab"
  */
 public class Num003_LongestPalindrome{
+    /**
+     * 中心扩散法：从一个字符开始，左右移动判断是否是回文字符串
+     *     1.回文串是奇数长度
+     *     2.回文串是复数长度
+     * @param s
+     * @return
+     */
     public static String longestPalindrome(String s) {
         if (s.length() == 1) {
             return s;
@@ -32,6 +39,13 @@ public class Num003_LongestPalindrome{
         return res;
     }
 
+    /**
+     * 获取字符串中 l 到 r 的最长回文串
+     * @param s
+     * @param l
+     * @param r
+     * @return
+     */
     private static String getPalindrome(String s, int l, int r) {
         String res = "";
         while (l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)) {
@@ -67,6 +81,7 @@ public class Num003_LongestPalindrome{
 
     /**
      * 优化获取回文串方法
+     *     只计算 l 和 r，不获取中间过程的字符串，只在下标确定后返回对应的回文字符串
      * @param s
      * @param l
      * @param r
@@ -80,10 +95,13 @@ public class Num003_LongestPalindrome{
     }    
 
     public static void main(String[] args) {
-        String s = "babbcabc";
+        String s = "babbcabcacssdfsad";
+        long firstTime = System.currentTimeMillis();
         String res = longestPalindrome(s);
+        long twoTime = System.currentTimeMillis(); 
+        System.out.println(res + " time:" + (twoTime - firstTime));
         String res1 = longestPalindrome1(s);
-        System.out.println(res);
-        System.out.println(res1);
+        long threeTime = System.currentTimeMillis();
+        System.out.println(res1 + " time:" + (threeTime - twoTime));
     }
 }
